@@ -7,6 +7,12 @@ It provides a command-line tool and Python API that make it easy to download ima
 
 ## How to use
 
+Install using pip:
+
+```sh
+pip install earth-view-api
+```
+
 ### In Python
 
 ```python
