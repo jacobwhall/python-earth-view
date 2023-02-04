@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "earth-view"
+version = "0.0.1"
+authors = [
+  { name="Jacob Hall", email="email@jacobhall.net" },
+]
+description = "Python API for downloading Google Earth View images"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {file = "LICENSE.md"}
+requires-python = ">=3.5"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+]
+dependencies = [
+    "click",
+    "requests"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jacobwhall/python-earth-view"
+"Bug Tracker" = "https://github.com/jacobwhall/python-earth-view/issues"
+
+[project.scripts]
+earth-view = "earth_view.earth_view:get_image"
